@@ -1,0 +1,13 @@
+# Define a list
+my_list = [1, 2, 3, 4, 2, 5, 6, 2, 7]
+
+# Define the element to remove
+element_to_remove = 2
+
+# Use a for loop to remove all occurrences of the element
+for item in my_list[:]:
+    if item == element_to_remove:
+        my_list.remove(item)
+
+# Print the list after removing the element
+print("List after removing all occurrences of", element_to_remove, ":", my_list)
