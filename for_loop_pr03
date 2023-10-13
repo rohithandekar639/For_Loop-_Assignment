@@ -1,0 +1,11 @@
+# Input string
+input_string = "Hello, World!"
+
+# Initialize an empty string to store the reversed characters
+reversed_string = ""
+
+for char in reversed(input_string):
+    reversed_string += char
+
+# Print the reversed string
+print("Reversed string:", reversed_string)
