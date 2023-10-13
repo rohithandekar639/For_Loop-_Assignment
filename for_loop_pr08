@@ -1,0 +1,12 @@
+# Input the string
+input_string = input("Enter a string: ")
+
+#  A variable to count the characters
+length = 0
+
+for char in input_string:
+    length += 1
+
+# Print the length of the string
+print(f"The length of the string is: {length}")
+
