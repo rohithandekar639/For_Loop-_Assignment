@@ -1,0 +1,16 @@
+# Define a list
+my_list = [1, 2, 3, 4, 5, 2, 6, 7]
+
+has_duplicates = False
+
+# Use a for loop to check for duplicates
+for i in range(len(my_list)):
+    for j in range(i + 1, len(my_list)):
+        if my_list[i] == my_list[j]:
+            has_duplicates = True
+            break
+
+if has_duplicates:
+    print("The list contains duplicates.")
+else:
+    print("The list does not contain duplicates.")
