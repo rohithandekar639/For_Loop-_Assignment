@@ -1,0 +1,19 @@
+# Define a list of numbers
+numbers = [5, 10, 15, 20, 25]
+
+#  Variables to calculate the sum and count
+total_sum = 0
+count = 0
+
+for number in numbers:
+    total_sum += number
+    count += 1
+
+# Calculate the average
+if count > 0:
+    average = total_sum / count
+else:
+    average = 0  # To avoid division by zero if the list is empty
+
+# Print the average
+print("The average of the numbers is:", average)
