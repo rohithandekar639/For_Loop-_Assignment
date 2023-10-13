@@ -1,0 +1,12 @@
+fahrenheit_temperatures = [32, 68, 86, 104, 122]
+
+celsius_temperatures = []
+
+# Use a for loop to convert Fahrenheit to Celsius
+for fahrenheit in fahrenheit_temperatures:
+    celsius = (fahrenheit - 32) * 5/9
+    celsius_temperatures.append(celsius)
+
+# Print the converted Celsius temperatures
+print("Fahrenheit Temperatures:", fahrenheit_temperatures)
+print("Celsius Temperatures:", celsius_temperatures)
