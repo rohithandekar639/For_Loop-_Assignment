@@ -1,0 +1,11 @@
+# Define the range of numbers for the multiplication table
+start = 1
+end = 5
+
+# Use nested for loops to generate the multiplication table
+print("Multiplication table:")
+for i in range(start, end + 1):
+    for j in range(start, end + 1):
+        result = i * j
+        print(f"{i} x {j} = {result}")
+    print()
