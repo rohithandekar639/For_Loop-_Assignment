@@ -1,0 +1,14 @@
+# Function to calculate the sum of the digits of a number
+
+def digit_sum(number):
+    return sum(int(digit) for digit in str(number))
+
+
+numbers = [123, 45, 6789, 12, 34]
+
+
+digit_sums = [digit_sum(num) for num in numbers]
+
+# Print the results
+for i in range(len(numbers)):
+    print(f"Number: {numbers[i]}, Digit Sum: {digit_sums[i]}")
