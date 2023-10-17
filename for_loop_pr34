@@ -1,0 +1,22 @@
+from statistics import mean, median, mode
+
+# List of numbers
+numbers = [1, 2, 2, 3, 4, 4, 4, 5, 5, 6]
+
+mean_value = sum(numbers) / len(numbers)
+
+# Calculate the median using a for loop
+sorted_numbers = sorted(numbers)
+if len(sorted_numbers) % 2 == 0:
+    median_value = (sorted_numbers[len(sorted_numbers) // 2 - 1] + sorted_numbers[len(sorted_numbers) // 2]) / 2
+else:
+    median_value = sorted_numbers[len(sorted_numbers) // 2]
+
+# Calculate the mode using a for loop
+mode_value = max((numbers.count(item), item) for item in set(numbers))[1]
+
+# Display the results
+print("List of Numbers:", numbers)
+print("Mean:", mean_value)
+print("Median:", median_value)
+print("Mode:", mode_value)
