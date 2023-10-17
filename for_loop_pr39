@@ -1,0 +1,10 @@
+# Calculate the sum of digits of a number
+def sum_of_digits(number):
+    return sum(int(digit) for digit in str(number))
+
+digit_sums = [sum_of_digits(number) for number in range(1, 1001)]
+
+total_sum = sum(digit_sums)
+
+# Display the total sum
+print("Total Sum of Digits for Numbers from 1 to 1000:", total_sum)
