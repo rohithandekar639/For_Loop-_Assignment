@@ -1,0 +1,11 @@
+# Two lists: keys and values
+keys = ['a', 'b', 'c']
+values = [1, 2, 3]
+
+combined_dict = {}
+for key, value in zip(keys, values):
+    combined_dict[key] = value
+
+# Display the resulting dictionary
+print("Combined Dictionary:", combined_dict)
+
