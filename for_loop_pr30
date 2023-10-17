@@ -1,0 +1,8 @@
+# List of strings with non-numeric characters
+string_list = ["abc123", "456xyz", "789pqr", "stuv", "xy234z"]
+
+cleaned_list = [''.join(char for char in string if char.isnumeric()) for string in string_list]
+
+# Display the cleaned list
+print("Original List:", string_list)
+print("Cleaned List:", cleaned_list)
