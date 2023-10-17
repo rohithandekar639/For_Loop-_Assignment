@@ -1,0 +1,9 @@
+# Input a sentence
+sentence = input("Enter a sentence: ")
+
+words = sentence.split()
+
+# Find the longest word using a for loop and list comprehension
+longest_word = max((word for word in words), key=len)
+
+print("The longest word in the sentence is:", longest_word)
