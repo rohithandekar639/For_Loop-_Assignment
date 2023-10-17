@@ -1,0 +1,12 @@
+# Function to count the number of vowels in a string
+def count_vowels(string):
+    vowels = "AEIOUaeiou"
+    return sum(1 for char in string if char in vowels)
+
+string_list = ["hello", "world", "programming", "is", "fun", "a", "challenge"]
+
+filtered_strings = [string for string in string_list if count_vowels(string) > 3]
+
+# Display the filtered list of strings
+print("Original List:", string_list)
+print("Filtered List (more than 3 vowels):", filtered_strings)
